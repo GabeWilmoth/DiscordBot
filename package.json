@@ -1,0 +1,20 @@
+{
+  "name": "discordbottesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "discord.js": "^11.4.2",
+    "puppeteer": "^1.11.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "token": "NTEzMDk0MTA2OTYwODg3ODM4.DtDAXQ.Y8PkQpj0Kx6Zm44Ijn9Ap5g7-zQ",
+  "prefix": "!"
+}
