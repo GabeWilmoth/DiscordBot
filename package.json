@@ -16,5 +16,5 @@
     "request-promise": "^4.2.2"
   },
   "token": "NTEzMDk0MTA2OTYwODg3ODM4.DtDAXQ.Y8PkQpj0Kx6Zm44Ijn9Ap5g7-zQ",
-  "prefix": "!"
+  "prefix": "~"
 }
