@@ -12,6 +12,8 @@ bot.on('message', function (message) {
     if (message.content.startsWith == 'OP') {
         message.reply('Hello There!');
 
+
+
         puppeteer
             .launch()
             .then(function (browser) {
@@ -54,7 +56,7 @@ bot.on('message', function (message) {
 bot.on("message", message => {
     let ImgExists = false;
     if (message.author.bot) return;
-
+    // This is where we'll put our code.
     if (message.content.indexOf(package.prefix) !== 0) return;
 
     const args = message.content.slice(package.prefix.length).trim().split(/ +/g);
@@ -66,6 +68,12 @@ bot.on("message", message => {
         message.channel.send('Meh.');
     }
     else if (command === 'op.gg') {
+
+        /*
+        What I could do is print out the rank and stats in that box (in a emmbed message),
+        then take a photo of the top 3 or so champions that user has played and display below. 
+        */
+
         let urlAdd = "";
         for (i = 0; i < args.length; i++) {
             urlAdd = urlAdd + args[i];
