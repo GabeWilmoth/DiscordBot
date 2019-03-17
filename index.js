@@ -5,15 +5,12 @@ const $ = require('cheerio');
 const puppeteer = require('puppeteer');
 const bot = new Discord.Client();
 const package = require("./package.json");
-// const TOKEN = 'NTEzMDk0MTA2OTYwODg3ODM4.DtDAXQ.Y8PkQpj0Kx6Zm44Ijn9Ap5g7-zQ';
 var url = 'http://na.op.gg/summoner/userName=';
 
 
 bot.on('message', function (message) {
     if (message.content.startsWith == 'OP') {
         message.reply('Hello There!');
-
-
 
         puppeteer
             .launch()
@@ -57,7 +54,7 @@ bot.on('message', function (message) {
 bot.on("message", message => {
     let ImgExists = false;
     if (message.author.bot) return;
-    // This is where we'll put our code.
+
     if (message.content.indexOf(package.prefix) !== 0) return;
 
     const args = message.content.slice(package.prefix.length).trim().split(/ +/g);
